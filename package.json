@@ -1,4 +1,5 @@
 {
+  "homepage": "https://vuhoang123.github.io/Demo",
   "name": "react-testing-library-by-example",
   "version": "1.0.0",
   "description": "Learn how to test react and redux by sample using Jest, each of the samples contains a readme.md file that indicates the purpose of the sample plus an step by step guide to reproduce it.",
@@ -10,7 +11,9 @@
     "test": "jest -c ./config/test/jest.json --verbose",
     "test:watch": "npm run test -- --watchAll -i",
     "pretest:coverage": "rimraf coverage",
-    "test:coverage": "jest -c ./config/test/jest.coverage.json"
+    "test:coverage": "jest -c ./config/test/jest.coverage.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Lemoncode",
   "repository": "https://github.com/Lemoncode/react-testing-by-example",
@@ -46,6 +49,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "css-loader": "^3.4.2",
     "deep-freeze": "0.0.1",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^25.1.0",
     "react-test-renderer": "^16.12.0",
